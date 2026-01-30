@@ -5,97 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>강진원 | 소개 페이지</title>
   <style>
-    * { box-sizing: border-box; }
-    body {
+    * {
       margin: 0;
-      font-family: 'Noto Sans KR', Arial, sans-serif;
-      color: #fff;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Noto Sans KR", sans-serif;
+    }
+
+    body {
       min-height: 100vh;
-      background:
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-        url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80'),
-        url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1600&q=80');
-      background-size: cover, cover, cover;
-      background-position: center, left center, right center;
-      background-blend-mode: overlay;
+      background-image: url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .card {
-      background: rgba(0,0,0,0.6);
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.55);
+      padding: 60px 80px;
       border-radius: 20px;
-      padding: 40px;
-      max-width: 720px;
+      color: #ffffff;
+      text-align: center;
+      max-width: 600px;
       width: 90%;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     }
+
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
     }
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 400;
-      color: #ddd;
-      margin-bottom: 30px;
-    }
+
     p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 15px;
-    }
-    .tags {
-      margin-top: 25px;
-    }
-    .tag {
-      display: inline-block;
-      background: #1e90ff;
-      color: #fff;
-      padding: 8px 14px;
-      border-radius: 999px;
-      margin-right: 10px;
+      font-size: 1.2rem;
+      line-height: 1.8;
       margin-bottom: 10px;
-      font-size: 0.9rem;
     }
+
+    .job {
+      margin-top: 20px;
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: #e0e0e0;
+    }
+
     footer {
       margin-top: 40px;
-      font-size: 0.85rem;
-      color: #ccc;
-      text-align: center;
-    }
-    footer a {
-      color: #9ecbff;
-      text-decoration: none;
+      font-size: 0.9rem;
+      color: #cccccc;
     }
   </style>
 </head>
 <body>
-  <div class="card">
+  <div class="overlay">
     <h1>강진원</h1>
-    <h2>자동차 회사 근무 · MTB 라이더</h2>
-
-    <p>
-      안녕하세요. 저는 <strong>자동차 회사</strong>에서 근무하고 있는 강진원입니다.
-      자동차 기술과 움직이는 모든 것에 관심이 많습니다.
-    </p>
-
-    <p>
-      여가 시간에는 <strong>MTB 라이딩</strong>을 즐깁니다.
-      겁은 좀 많지만, 그래서 더 안전하게 천천히 타는 편이에요.
-    </p>
-
-    <div class="tags">
-      <span class="tag">🚗 자동차</span>
-      <span class="tag">🚵 MTB</span>
-      <span class="tag">😅 겁 많음</span>
-      <span class="tag">🛠️ 엔지니어 감성</span>
-    </div>
-
+    <p>안녕하세요.</p>
+    <p>자동차 산업에서 일하며,<br />기술과 이동의 미래를 만들어가고 있습니다.</p>
+    <div class="job">자동차회사 근무</div>
     <footer>
-      이 페이지는 연습용 소개 웹페이지입니다.<br />
-      GPT 기반 웹 제작 아이디어는 
-      <a href="https://gptonline.ai/ko/" target="_blank">gptonline.ai/ko</a> 에서 더 확인해보세요.
+      © 2026 Kang Jinwon
     </footer>
   </div>
 </body>
