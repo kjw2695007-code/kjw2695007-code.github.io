@@ -5,94 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>강진원 | 소개 페이지</title>
   <style>
+    * { box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       margin: 0;
+      font-family: 'Noto Sans KR', Arial, sans-serif;
+      color: #fff;
       min-height: 100vh;
-      background: linear-gradient(135deg, #e0f2fe 0%, #fef9c3 50%, #fce7f3 100%);
-      color: #111827;
-      line-height: 1.6;
-      position: relative;
-      overflow-x: hidden;
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80'),
+        url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover, cover, cover;
+      background-position: center, left center, right center;
+      background-blend-mode: overlay;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    body::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400"><rect width="400" height="400" fill="none"/><g opacity="0.25"><circle cx="80" cy="80" r="40" fill="%233b82f6"/><rect x="260" y="60" width="80" height="80" rx="16" fill="%23ec4899"/><polygon points="200,300 240,360 160,360" fill="%2322c55e"/><path d="M60 300 Q120 260 180 300" stroke="%236366f1" stroke-width="8" fill="none"/></g></svg>');
-      background-repeat: repeat;
-      background-size: 300px 300px;
-      z-index: 0;
-    }
-    .container {
-      position: relative;
-      z-index: 1;
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(6px);
+    .card {
+      background: rgba(0,0,0,0.6);
       border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 60px 20px;
+      padding: 40px;
+      max-width: 720px;
+      width: 90%;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     }
     h1 {
       font-size: 2.5rem;
       margin-bottom: 10px;
     }
     h2 {
-      font-size: 1.5rem;
-      color: #374151;
-      margin-top: 40px;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #ddd;
+      margin-bottom: 30px;
     }
     p {
       font-size: 1.1rem;
-      color: #4b5563;
+      line-height: 1.7;
+      margin-bottom: 15px;
     }
-    .badge {
+    .tags {
+      margin-top: 25px;
+    }
+    .tag {
       display: inline-block;
-      background-color: #111827;
-      color: #ffffff;
-      padding: 6px 12px;
-      border-radius: 9999px;
+      background: #1e90ff;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 999px;
+      margin-right: 10px;
+      margin-bottom: 10px;
       font-size: 0.9rem;
-      margin-top: 12px;
     }
     footer {
-      margin-top: 80px;
-      font-size: 0.9rem;
-      color: #6b7280;
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #ccc;
       text-align: center;
+    }
+    footer a {
+      color: #9ecbff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>안녕하세요, 강진원입니다.</h1>
-    <p class="badge">대한민국 · 자동차 회사 근무</p>
+  <div class="card">
+    <h1>강진원</h1>
+    <h2>자동차 회사 근무 · MTB 라이더</h2>
 
-    <h2>소개</h2>
     <p>
-      저는 대한민국에서 거주 중인 남성으로, 현재 자동차 회사에서 근무하고 있습니다.
-      기술과 제품이 실제 사용자에게 전달되는 과정에 관심이 많으며,
-      지속적으로 더 나은 결과물을 만들기 위해 배우고 성장하고 있습니다.
+      안녕하세요. 저는 <strong>자동차 회사</strong>에서 근무하고 있는 강진원입니다.
+      자동차 기술과 움직이는 모든 것에 관심이 많습니다.
     </p>
 
-    <h2>관심 분야</h2>
     <p>
-      자동차 산업, 기술 기반 제품, 사용자 경험, 그리고 효율적인 업무 방식에 관심이 있습니다.
-      GitHub를 활용한 개인 프로젝트와 포트폴리오 관리에도 흥미를 가지고 있습니다.
+      여가 시간에는 <strong>MTB 라이딩</strong>을 즐깁니다.
+      겁은 좀 많지만, 그래서 더 안전하게 천천히 타는 편이에요.
     </p>
 
-    <h2>이 웹페이지에 대해</h2>
-    <p>
-      이 페이지는 GitHub Pages를 통해 배포되는 개인 소개 웹페이지로,
-      저에 대한 기본적인 정보와 앞으로의 프로젝트를 정리하기 위한 공간입니다.
-    </p>
+    <div class="tags">
+      <span class="tag">🚗 자동차</span>
+      <span class="tag">🚵 MTB</span>
+      <span class="tag">😅 겁 많음</span>
+      <span class="tag">🛠️ 엔지니어 감성</span>
+    </div>
 
     <footer>
-      © 2026 강진원. All rights reserved.
+      이 페이지는 연습용 소개 웹페이지입니다.<br />
+      GPT 기반 웹 제작 아이디어는 
+      <a href="https://gptonline.ai/ko/" target="_blank">gptonline.ai/ko</a> 에서 더 확인해보세요.
     </footer>
   </div>
 </body>
